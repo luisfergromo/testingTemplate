@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-09T22:12:45.501Z",
+    "end": "2020-06-09T22:12:49.037Z",
+    "duration": 3536,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1edbff46-1aad-4a2d-bbcd-a88a65ee7f1a",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [
+        {
+          "title": "\"before all\" hook",
+          "fullTitle": "\"before all\" hook",
+          "timedOut": false,
+          "duration": 1292,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "global.expect = expect;\nglobal.browser = await puppeteer.launch(opts);",
+          "err": {},
+          "uuid": "324428ba-af64-46e7-be7f-cad39e771f22",
+          "parentUUID": "1edbff46-1aad-4a2d-bbcd-a88a65ee7f1a",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "afterHooks": [
+        {
+          "title": "\"after all\" hook",
+          "fullTitle": "\"after all\" hook",
+          "timedOut": false,
+          "duration": 0,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "browser.close();\nsetTimeout(() => { cmd.run('node server.js'); }, 5000)\nsetTimeout(() => { opn('http://localhost:9988'); }, 1000);\n// open('./mochawesome-report/mochawesome.html');\nglobal.browser = globalVariables.browser;\nglobal.expect = globalVariables.expect;",
+          "err": {},
+          "uuid": "f9c2367a-20c2-4bda-ae1f-aea0eb3aca46",
+          "parentUUID": "1edbff46-1aad-4a2d-bbcd-a88a65ee7f1a",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a1b3b41c-8515-46ba-8ff5-6d474ac4c276",
+          "title": "First Testing lot",
+          "fullFile": "/Users/luisromo/Desktop/testingAutomation/001/test/test.spec.js",
+          "file": "/test/test.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook",
+              "fullTitle": "First Testing lot \"before all\" hook",
+              "timedOut": false,
+              "duration": 2081,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// browser = await puppeteer.launch(\n//     {\n//         headless: false,\n//         slowMo: 250,\n//     }\n// )\npage = await browser.newPage()\nawait page.goto('https://google.com', { waitUntil: 'load' })\npage.setViewport({ width: 1920, height: 1080 })",
+              "err": {},
+              "uuid": "7a4eb184-fae7-48fd-8938-e915e76acacf",
+              "parentUUID": "a1b3b41c-8515-46ba-8ff5-6d474ac4c276",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook",
+              "fullTitle": "First Testing lot \"after all\" hook",
+              "timedOut": false,
+              "duration": 152,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await browser.close()",
+              "err": {},
+              "uuid": "b367d847-b2dc-4256-a125-ccf1022f0509",
+              "parentUUID": "a1b3b41c-8515-46ba-8ff5-6d474ac4c276",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Should run right here",
+              "fullTitle": "First Testing lot Should run right here",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "2c607e01-f6ac-43ce-935f-df9caf1d8cb7",
+              "parentUUID": "a1b3b41c-8515-46ba-8ff5-6d474ac4c276",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2c607e01-f6ac-43ce-935f-df9caf1d8cb7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
