@@ -9,27 +9,3 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "yearly"
-  - package-ecosystem: "chai" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "yearly"
-  - package-ecosystem: "mocha"
-    directory: "/" 
-    schedule:
-      interval: "yearly"
-  - package-ecosystem: "mochawesome"
-    directory: "/" 
-    schedule:
-      interval: "yearly"
-  - package-ecosystem: "node-cmd"
-    directory: "/" 
-    schedule:
-      interval: "yearly"
-  - package-ecosystem: "opn"
-    directory: "/" 
-    schedule:
-      interval: "yearly"
-  - package-ecosystem: "puppeteer"
-    directory: "/" 
-    schedule:
-      interval: "yearly"
