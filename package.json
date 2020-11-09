@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.2.0",
+    "mocha": "^8.2.1",
     "mochawesome": "^6.1.1",
     "node-cmd": "^4.0.0",
     "opn": "^6.0.0",
